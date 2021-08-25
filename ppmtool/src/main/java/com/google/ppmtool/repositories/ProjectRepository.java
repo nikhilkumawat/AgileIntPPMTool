@@ -8,6 +8,9 @@ import com.google.ppmtool.domain.Project;
 @Repository
 public interface ProjectRepository extends CrudRepository<Project, Long> {
 
+	public Project findByProjectIdentifier(String projectIdentifier);
+	
+	
 	
 	
 }
